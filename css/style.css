@@ -6781,6 +6781,14 @@ header.hero:not(.home-hero)::after {
     color: #FFF8F3;
     background: #332E34;
   }
+  :root:not([data-theme]) .cta-band.is-conversation-cta .cta-button-label,
+  :root:not([data-theme]) .post-cta.is-conversation-cta .cta-button-label {
+    color: #FFF8F3;
+  }
+  :root:not([data-theme]) .cta-band.is-conversation-cta .cta-button-detail,
+  :root:not([data-theme]) .post-cta.is-conversation-cta .cta-button-detail {
+    color: #C4B8BA;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   .cta-band.is-conversation-cta .cta-actions .btn,
@@ -6800,6 +6808,19 @@ header.hero:not(.home-hero)::after {
   .post-cta.is-conversation-cta .cta-actions .btn:hover .cta-button-arrow,
   .post-cta.is-conversation-cta .cta-actions .btn:focus-visible .cta-button-arrow {
     transform: none;
+  }
+}
+
+:root[data-theme="light"] .post-cta.is-conversation-cta {
+  color: #FFF9F5;
+  background-color: #94112A;
+  background-image: linear-gradient(118deg, #94112A 0%, #760F27 60%, #5B1127 100%);
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) .post-cta.is-conversation-cta {
+    color: #FFF9F5;
+    background-color: #94112A;
+    background-image: linear-gradient(118deg, #94112A 0%, #760F27 60%, #5B1127 100%);
   }
 }
 
