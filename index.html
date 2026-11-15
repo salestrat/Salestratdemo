@@ -21,7 +21,7 @@
 <link rel="icon" type="image/png" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;family=Montserrat:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Montserrat:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <script type="application/ld+json">
 {
@@ -41,15 +41,15 @@
   ]
 }
 </script>
-<script>(function(){try{var theme=localStorage.getItem('salestrat-theme');if(theme==='light'||theme==='dark')document.documentElement.setAttribute('data-theme',theme);}catch(error){console.warn('SaleStrat could not read the saved theme preference.',error);}})();</script>
+<script>(function(){var root=document.documentElement;root.setAttribute('data-theme','light');try{var theme=localStorage.getItem('salestrat-theme');if(theme==='light'||theme==='dark')root.setAttribute('data-theme',theme);}catch(error){console.warn('SaleStrat could not read the saved theme preference.',error);}})();</script>
 </head>
-<body>
+<body id="top" class="home-page">
 <nav class="site-nav">
   <div class="container nav-row">
     <a href="index.html" class="nav-brand"><img src="logo.png" alt="SaleStrat logo"><span class="nav-brand-text"><span class="nav-brand-tag">Websites, Stores &amp; Growth Partner</span></span></a>
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
     <div class="nav-links" id="site-menu">
-      <a href="#services" data-scroll-spy="services">Services</a><a href="process.html">How it works</a><a href="#work" data-scroll-spy="work">Case studies</a><a href="why-choose-salestrat.html">Why SaleStrat</a><a href="blog/index.html">Insights</a><a href="about.html">About</a><a href="vision.html">Vision</a><a href="#contact" data-scroll-spy="contact" class="btn btn-primary">Start a conversation</a>
+      <a href="#services" data-scroll-spy="services">Services</a><a href="#ecomnomics" data-scroll-spy="ecomnomics">Ecomnomics</a><a href="process.html">How it works</a><a href="#work" data-scroll-spy="work">Case studies</a><a href="why-choose-salestrat.html">Why SaleStrat</a><a href="blog/index.html">Insights</a><a href="about.html">About</a><a href="vision.html">Vision</a><a href="#contact" data-scroll-spy="contact" class="btn btn-primary">Start a conversation</a>
     </div>
   </div>
 </nav>
@@ -58,7 +58,7 @@
   <div class="container hero-grid">
     <div class="home-hero-copy">
       <span class="hero-tag"><span class="dot"></span>Independent growth support for online stores</span>
-      <h1>Make your online store<br>easier to find, trust<br><em>and buy from.</em></h1>
+      <h1><span class="hero-heading-line">Get discovered.</span> <span class="hero-heading-line">Earn trust.</span> <span class="hero-heading-line"><em>Make buying easier.</em></span></h1>
       <p class="lede">I help growing e-commerce businesses improve Shopify stores, Meta Ads, SEO, and Amazon or Flipkart listings—with practical, focused work built around your next business priority.</p>
       <div class="hero-cta">
         <a href="#contact" class="btn btn-primary">Talk about your store</a>
@@ -148,9 +148,74 @@
       </div>
     </div>
   </div>
+  <div class="hero-geometry" aria-hidden="true">
+    <span class="hero-geometry-orbit hero-geometry-orbit-one"></span>
+    <span class="hero-geometry-orbit hero-geometry-orbit-two"></span>
+    <span class="hero-geometry-node hero-geometry-node-one"></span>
+    <span class="hero-geometry-node hero-geometry-node-two"></span>
+    <svg class="hero-geometry-lines" viewBox="0 0 1200 260" preserveAspectRatio="none"><path d="M0 204H208L274 138H464M736 84h186l72 72h206"></path></svg>
+  </div>
+  <div class="hero-marquee" role="region" aria-label="E-commerce and marketing capabilities">
+    <div class="hero-marquee-track">
+      <div class="hero-marquee-group">
+        <span>E-COMMERCE</span><i aria-hidden="true"></i><span>SHOPIFY</span><i aria-hidden="true"></i><span>META ADS</span><i aria-hidden="true"></i><span>SEO</span><i aria-hidden="true"></i><span>AMAZON</span><i aria-hidden="true"></i><span>FLIPKART</span><i aria-hidden="true"></i><span>WEB DESIGN</span><i aria-hidden="true"></i><span>AUTOMATION</span><i aria-hidden="true"></i>
+      </div>
+      <div class="hero-marquee-group" aria-hidden="true">
+        <span>E-COMMERCE</span><i></i><span>SHOPIFY</span><i></i><span>META ADS</span><i></i><span>SEO</span><i></i><span>AMAZON</span><i></i><span>FLIPKART</span><i></i><span>WEB DESIGN</span><i></i><span>AUTOMATION</span><i></i>
+      </div>
+    </div>
+  </div>
 </header>
 
 <main>
+  <section class="section section-rule theme-band-paper growth-story-section" id="growth-framework" aria-labelledby="growth-framework-title">
+    <div class="container">
+      <div class="folio">A focused way to make progress</div>
+      <div class="growth-story-intro">
+        <h2 id="growth-framework-title">A clear path from idea to improvement.</h2>
+        <p class="lede">Clarify what matters, build the right foundations, reach the right people, and keep improving with evidence. Each stage connects to practical work—not a one-size-fits-all package.</p>
+      </div>
+      <div class="growth-story-layout">
+        <nav class="growth-story-nav" aria-label="Four stages of the SaleStrat growth framework">
+          <button type="button" class="growth-story-link is-active" aria-current="step" aria-controls="growth-clarify"><span>01</span> Clarify</button>
+          <button type="button" class="growth-story-link" aria-controls="growth-build"><span>02</span> Build</button>
+          <button type="button" class="growth-story-link" aria-controls="growth-reach"><span>03</span> Reach</button>
+          <button type="button" class="growth-story-link" aria-controls="growth-improve"><span>04</span> Improve</button>
+        </nav>
+        <div class="growth-story-stages" id="growth-stage-content" aria-live="polite">
+          <article class="growth-story-stage is-active" id="growth-clarify" data-growth-stage>
+            <span class="growth-story-index">01 / CLARIFY</span>
+            <h3>Start with the business and the real priority.</h3>
+            <p>Understand your offer, audience, customer journey, and current constraints before recommending where to focus.</p>
+            <span class="growth-story-deliverable">Discovery · Priorities · Defined scope</span>
+            <div class="growth-story-visual" aria-hidden="true"><svg viewBox="0 0 220 170"><circle cx="110" cy="85" r="57"></circle><circle cx="110" cy="85" r="35"></circle><circle cx="110" cy="85" r="12" class="growth-visual-focus"></circle><path d="M110 8v22M110 140v22M33 85h22M165 85h22M55 30l16 16M149 124l16 16M165 30l-16 16M71 124l-16 16"></path><circle cx="110" cy="28" r="4" class="growth-visual-dot"></circle><circle cx="167" cy="85" r="4" class="growth-visual-dot"></circle></svg><span>Find the signal in the noise</span></div>
+          </article>
+          <article class="growth-story-stage" id="growth-build" data-growth-stage>
+            <span class="growth-story-index">02 / BUILD</span>
+            <h3>Create a useful foundation for the next step.</h3>
+            <p>Shape responsive websites, online stores, landing pages, and product experiences around what customers need to understand and do.</p>
+            <span class="growth-story-deliverable">Websites · Shopify · WooCommerce</span>
+            <div class="growth-story-visual growth-visual-build" aria-hidden="true"><svg viewBox="0 0 220 170"><rect x="34" y="34" width="64" height="46" rx="8"></rect><rect x="122" y="34" width="64" height="46" rx="8"></rect><rect x="34" y="96" width="64" height="40" rx="8"></rect><rect x="122" y="96" width="64" height="40" rx="8" class="growth-visual-focus"></rect><path d="M66 80v16m88-16v16"></path></svg><span>Build a stronger foundation</span></div>
+          </article>
+          <article class="growth-story-stage" id="growth-reach" data-growth-stage>
+            <span class="growth-story-index">03 / REACH</span>
+            <h3>Help the right people find you.</h3>
+            <p>Connect search, Meta campaigns, and relevant marketplace activity to your offer and the experience that follows.</p>
+            <span class="growth-story-deliverable">SEO · Meta Ads · Marketplaces</span>
+            <div class="growth-story-visual growth-visual-reach" aria-hidden="true"><svg viewBox="0 0 220 170"><path d="M110 85 48 42m62 43 63-45m-63 45-62 45m62-45 63 45"></path><circle cx="110" cy="85" r="22" class="growth-visual-focus"></circle><circle cx="47" cy="41" r="12"></circle><circle cx="173" cy="40" r="12"></circle><circle cx="47" cy="130" r="12"></circle><circle cx="173" cy="130" r="12"></circle></svg><span>Connect with the right audience</span></div>
+          </article>
+          <article class="growth-story-stage" id="growth-improve" data-growth-stage>
+            <span class="growth-story-index">04 / IMPROVE</span>
+            <h3>Learn what is working and refine the work.</h3>
+            <p>Review useful signals, customer questions, and day-to-day operations to agree on sensible improvements without promising outcomes no one can control.</p>
+            <span class="growth-story-deliverable">Review · Refinement · Ongoing support</span>
+            <div class="growth-story-visual growth-visual-improve" aria-hidden="true"><svg viewBox="0 0 220 170"><path d="M32 132h158M42 126V42M52 112l35-27 30 12 48-49"></path><path d="M143 48h23v23"></path><circle cx="52" cy="112" r="5"></circle><circle cx="87" cy="85" r="5"></circle><circle cx="117" cy="97" r="5"></circle><circle cx="165" cy="48" r="7" class="growth-visual-focus"></circle></svg><span>Review, learn, refine</span></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section section-rule journey-section theme-band-paper">
     <div class="container">
       <div class="folio">A better customer journey</div>
@@ -173,6 +238,28 @@
           <h2 id="home-platforms-title">One connected presence. The platforms that fit.</h2>
         </div>
         <p class="lede">I support the storefronts and marketplaces your business relies on, with work shaped around your products, customer experience, and day-to-day operations.</p>
+      </div>
+      <div class="platform-marquee" role="region" aria-label="Platforms SaleStrat works with">
+        <div class="platform-marquee-track">
+          <div class="platform-marquee-group">
+            <span class="platform-marquee-item"><img src="media/platform-shopify.svg" alt="Shopify"></span>
+            <span class="platform-marquee-item"><img src="media/platform-woocommerce.svg" alt="WooCommerce"></span>
+            <span class="platform-marquee-item"><img src="media/platform-wordpress.svg" alt="WordPress"></span>
+            <span class="platform-marquee-item"><img src="media/platform-amazon.svg" alt="Amazon"></span>
+            <span class="platform-marquee-item"><img src="media/platform-flipkart.png" alt="Flipkart"></span>
+            <span class="platform-marquee-item platform-marquee-wordmark platform-marquee-meta">Meta Ads</span>
+            <span class="platform-marquee-item platform-marquee-wordmark platform-marquee-google">Google</span>
+          </div>
+          <div class="platform-marquee-group" aria-hidden="true">
+            <span class="platform-marquee-item"><img src="media/platform-shopify.svg" alt=""></span>
+            <span class="platform-marquee-item"><img src="media/platform-woocommerce.svg" alt=""></span>
+            <span class="platform-marquee-item"><img src="media/platform-wordpress.svg" alt=""></span>
+            <span class="platform-marquee-item"><img src="media/platform-amazon.svg" alt=""></span>
+            <span class="platform-marquee-item"><img src="media/platform-flipkart.png" alt=""></span>
+            <span class="platform-marquee-item platform-marquee-wordmark platform-marquee-meta">Meta Ads</span>
+            <span class="platform-marquee-item platform-marquee-wordmark platform-marquee-google">Google</span>
+          </div>
+        </div>
       </div>
       <div class="home-platform-grid" aria-label="Commerce platforms SaleStrat can help manage">
         <article class="home-platform-card reveal">
@@ -230,19 +317,78 @@
     </div>
   </section>
 
+  <section class="section section-rule theme-band-paper ecomnomics-section" id="ecomnomics" aria-labelledby="ecomnomics-title">
+    <div class="container">
+      <div class="ecomnomics-heading reveal">
+        <div class="folio">A smarter perspective on growth</div>
+        <div class="ecomnomics-heading-grid">
+          <div>
+            <p class="ecomnomics-brand-line">SALESTRAT <span aria-hidden="true">|</span> THE ECOMNOMICS COMPANY</p>
+            <h2 id="ecomnomics-title">Beyond E-commerce. Into Ecomnomics.</h2>
+          </div>
+          <p class="lede">Introducing Ecomnomics — a smarter perspective on e-commerce growth. It brings together e-commerce strategy and business economics to help businesses understand the relationship between customer acquisition, conversions, revenue, retention, operational efficiency, and profitability.</p>
+        </div>
+      </div>
+
+      <div class="ecomnomics-model reveal">
+        <div class="ecomnomics-model-heading">
+          <span>THE ECONOMICS OF SUSTAINABLE GROWTH</span>
+          <span>Six connected levers</span>
+        </div>
+        <ol class="ecomnomics-flow" aria-label="How e-commerce growth levers connect to profitability">
+          <li class="ecomnomics-step">
+            <span class="ecomnomics-step-number">01</span>
+            <span class="ecomnomics-step-copy"><strong>Customer acquisition</strong><small>Reach the right people.</small></span>
+          </li>
+          <li class="ecomnomics-step">
+            <span class="ecomnomics-step-number">02</span>
+            <span class="ecomnomics-step-copy"><strong>Conversion</strong><small>Make choosing easier.</small></span>
+          </li>
+          <li class="ecomnomics-step">
+            <span class="ecomnomics-step-number">03</span>
+            <span class="ecomnomics-step-copy"><strong>Revenue</strong><small>Grow value per order.</small></span>
+          </li>
+          <li class="ecomnomics-step">
+            <span class="ecomnomics-step-number">04</span>
+            <span class="ecomnomics-step-copy"><strong>Customer retention</strong><small>Give customers a reason to return.</small></span>
+          </li>
+          <li class="ecomnomics-step">
+            <span class="ecomnomics-step-number">05</span>
+            <span class="ecomnomics-step-copy"><strong>Operational efficiency</strong><small>Make the work behind growth work better.</small></span>
+          </li>
+          <li class="ecomnomics-step ecomnomics-step-outcome">
+            <span class="ecomnomics-step-number">06</span>
+            <span class="ecomnomics-step-copy"><strong>Profitability</strong><small>Understand what sustainable growth returns.</small></span>
+          </li>
+        </ol>
+        <div class="ecomnomics-model-footer">
+          <p>Sustainable growth is about more than generating sales. It is about understanding the economics behind them.</p>
+          <a href="#services" class="btn-text">Explore how SaleStrat can help <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <div class="ecomnomics-signature">
+        <strong>SaleStrat <span aria-hidden="true">|</span> Ecomnomics</strong>
+        <span>Think beyond transactions. Understand the economics of growth.</span>
+      </div>
+    </div>
+  </section>
+
   <section class="section section-rule theme-band-paper" id="services">
     <div class="container">
       <div class="folio">Start with the challenge</div>
       <h2>What do you need to solve?</h2>
       <p class="lede">Choose the situation that sounds like your business. Each service is designed around a specific gap—not a one-size-fits-all package.</p>
       <div class="path-grid">
-        <article class="path-card reveal">
+        <article class="path-card reveal" data-service-card>
+          <div class="service-card-visual service-card-visual-build" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="7" y="8" width="34" height="32" rx="4"></rect><path d="M7 17h34M14 13h.01M19 13h.01M15 24h18M15 30h11M15 36h7"></path></svg></div>
           <div class="path-num">01 / Build</div><h3>Your online presence isn't doing you justice</h3>
           <p>Get a polished, mobile-friendly website or store that explains what you offer, earns trust, and gives customers a clear next step.</p>
           <ul class="path-list"><li>Website design and development</li><li>Shopify and WooCommerce stores</li><li>Product pages, checkout, and launch SEO</li></ul>
           <a href="services/design-build.html" class="btn-text">Explore Design &amp; Build</a>
         </article>
-        <article class="path-card reveal">
+        <article class="path-card reveal" data-service-card>
+          <div class="service-card-visual service-card-visual-grow" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 38V10M8 38h33M14 32l9-10 7 5 11-14"></path><path d="M33 13h8v8"></path><circle cx="14" cy="32" r="2"></circle><circle cx="23" cy="22" r="2"></circle><circle cx="30" cy="27" r="2"></circle></svg></div>
           <div class="path-num">02 / Grow</div><h3>Your site is live, but growth feels stuck</h3>
           <p>Find and fix the friction between visitors and customers with practical marketing and ongoing improvements to your store.</p>
           <ul class="path-list"><li>E-commerce and marketplace management</li><li>SEO and paid campaigns</li><li>Lead follow-up and automation</li></ul>
@@ -250,6 +396,47 @@
         </article>
       </div>
       <p class="section-link"><a href="services.html" class="btn btn-outline">Compare all services</a></p>
+    </div>
+  </section>
+
+  <section class="section section-rule theme-band-paper practical-work-section" aria-labelledby="practical-work-title">
+    <div class="container">
+      <div class="folio">Straightforward, practical support</div>
+      <div class="practical-work-heading">
+        <h2 id="practical-work-title">Clear work. A scope that fits.</h2>
+        <p class="lede">Choose focused project work, ongoing support, or a custom digital solution. The work starts with your goals and the practical details behind them.</p>
+      </div>
+      <div class="practical-work-grid">
+        <article class="practical-work-card reveal">
+          <span class="practical-work-index">01 / DESIGN &amp; BUILD</span>
+          <h3>A clearer digital foundation.</h3>
+          <ul><li>Business websites and landing pages</li><li>Shopify and WooCommerce stores</li><li>Product pages and website improvements</li></ul>
+          <a class="btn-text" href="services/design-build.html">Explore Design &amp; Build <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="practical-work-card reveal">
+          <span class="practical-work-index">02 / MANAGE &amp; GROW</span>
+          <h3>Practical help for what is already live.</h3>
+          <ul><li>Meta advertising and SEO</li><li>E-commerce and marketplace management</li><li>Amazon and Flipkart listing support</li></ul>
+          <a class="btn-text" href="services/manage-grow.html">Explore Manage &amp; Grow <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="practical-work-card reveal">
+          <span class="practical-work-index">03 / SALESTRATXAI</span>
+          <h3>Useful automation, with people in control.</h3>
+          <ul><li>AI-assisted enquiry workflows</li><li>Business process and follow-up automation</li><li>Human review before important actions</li></ul>
+          <a class="btn-text" href="blog/ai-sales-chat-marketing.html">Explore SaleStratXAI <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+      <div class="practical-work-context">
+        <div>
+          <h3>Who we work with</h3>
+          <p>D2C and e-commerce brands, growing businesses, online retailers, marketplace sellers, and service-based businesses.</p>
+        </div>
+        <div>
+          <h3>How we work</h3>
+          <p>Understand the context, agree on scope, deliver and review, then refine what makes sense. Clear communication, realistic expectations, and no inflated promises.</p>
+        </div>
+      </div>
+      <p class="practical-work-note">Engagements can be one-time projects, monthly management and support, or custom digital solutions. Scope and pricing are discussed before work begins.</p>
     </div>
   </section>
 
@@ -280,22 +467,22 @@
                 <button class="xai-step is-active" id="xai-step-understand" type="button" role="tab" aria-selected="true" aria-controls="xai-step-detail" tabindex="0"
                   data-benefit-title="Understand the enquiry"
                   data-benefit-description="Group incoming questions by intent so the right request is easier to spot and route.">
-                  <span class="xai-step-number">01</span><span class="xai-step-name">Understand the question</span><span class="xai-step-arrow" aria-hidden="true">↗</span>
+                  <span class="xai-step-number">01</span><span class="xai-step-name">Understand enquiry</span><span class="xai-step-arrow" aria-hidden="true">↗</span>
                 </button>
                 <button class="xai-step" id="xai-step-draft" type="button" role="tab" aria-selected="false" aria-controls="xai-step-detail" tabindex="-1"
                   data-benefit-title="Create a useful first draft"
                   data-benefit-description="Use approved product details to prepare a relevant reply or campaign idea, reducing repetitive starting work.">
-                  <span class="xai-step-number">02</span><span class="xai-step-name">Draft a helpful response</span><span class="xai-step-arrow" aria-hidden="true">↗</span>
+                  <span class="xai-step-number">02</span><span class="xai-step-name">Draft response</span><span class="xai-step-arrow" aria-hidden="true">↗</span>
                 </button>
                 <button class="xai-step" id="xai-step-review" type="button" role="tab" aria-selected="false" aria-controls="xai-step-detail" tabindex="-1"
                   data-benefit-title="Keep a person in control"
                   data-benefit-description="Review tone, accuracy, pricing, and availability before anything is sent or published.">
-                  <span class="xai-step-number">03</span><span class="xai-step-name">Review before action</span><span class="xai-step-arrow" aria-hidden="true">↗</span>
+                  <span class="xai-step-number">03</span><span class="xai-step-name">Human review</span><span class="xai-step-arrow" aria-hidden="true">↗</span>
                 </button>
                 <button class="xai-step" id="xai-step-learn" type="button" role="tab" aria-selected="false" aria-controls="xai-step-detail" tabindex="-1"
                   data-benefit-title="Learn what to improve"
                   data-benefit-description="Use recurring questions and campaign signals to decide which store content or workflow deserves attention next.">
-                  <span class="xai-step-number">04</span><span class="xai-step-name">Learn and improve</span><span class="xai-step-arrow" aria-hidden="true">↗</span>
+                  <span class="xai-step-number">04</span><span class="xai-step-name">Learn &amp; improve</span><span class="xai-step-arrow" aria-hidden="true">↗</span>
                 </button>
               </div>
               <div class="xai-benefit" id="xai-step-detail" role="tabpanel" aria-labelledby="xai-step-understand" aria-live="polite">
@@ -333,8 +520,10 @@
         <div class="impact-map">
           <div class="impact-map-label"><span><i></i> THE CUSTOMER JOURNEY</span><span>Illustrative workflow</span></div>
           <svg class="impact-routes" viewBox="0 0 600 250" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M92 48 C190 48 218 125 300 125 C382 125 410 48 508 48"></path>
-            <path d="M92 202 C190 202 218 125 300 125 C382 125 410 202 508 202"></path>
+            <path d="M92 48 C180 48, 220 80, 300 125"></path>
+            <path d="M508 48 C420 48, 380 80, 300 125"></path>
+            <path d="M92 202 C180 202, 220 170, 300 125"></path>
+            <path d="M508 202 C420 202, 380 170, 300 125"></path>
             <circle cx="92" cy="48" r="4"></circle><circle cx="508" cy="48" r="4"></circle>
             <circle cx="92" cy="202" r="4"></circle><circle cx="508" cy="202" r="4"></circle>
           </svg>
@@ -385,30 +574,48 @@
   </section>
 
   <section class="section section-rule theme-band-red" id="faq">
-    <div class="container">
-      <div class="folio">Good questions, clear answers</div>
-      <h2>Before we get started</h2>
+    <div class="container faq-container">
+      <div class="faq-heading">
+        <div class="folio">Good questions, clear answers</div>
+        <h2>Before we work together</h2>
+      </div>
       <div class="faq-list">
-        <details class="faq-item"><summary>Do you work with stores outside India?</summary><p>I’m based in India and can discuss projects in other markets. Fit depends on your audience, platforms, and working hours.</p></details>
-        <details class="faq-item"><summary>Can you help if I already have a Shopify store?</summary><p>Yes. I can review the store, identify the priority—such as product pages, conversion, SEO, or campaign alignment—and agree on a focused scope.</p></details>
-        <details class="faq-item"><summary>Do you guarantee sales, rankings, or ad returns?</summary><p>No. Outcomes depend on your offer, competition, budget, customer experience, and other factors. I’ll agree on the work and measures with you, but won’t promise a result I can’t control.</p></details>
-        <details class="faq-item"><summary>How is the work scoped and priced?</summary><p>Project work is scoped around a defined deliverable. Ongoing support is scoped around priorities and cadence. Share what you need and I’ll confirm whether it is a fit before proposing next steps.</p></details>
-        <details class="faq-item"><summary>How do I start?</summary><p>Send a short note about your store, the challenge you’re facing, and what you want to improve. Email and WhatsApp are both fine.</p></details>
+        <details class="faq-item"><summary>Can you help with Shopify, WooCommerce, Amazon, or Flipkart?</summary><p>Yes. Depending on your goals, I can help with store improvements, product and listing presentation, SEO, and digital campaigns. We’ll confirm the platform and specific deliverables before work begins.</p></details>
+        <details class="faq-item"><summary>Can you improve my Indian D2C store’s mobile shopping experience?</summary><p>Yes. We can review mobile browsing, product pages, and the customer journey, then prioritize practical changes based on your store and business goals.</p></details>
+        <details class="faq-item"><summary>Can you review UPI, COD, shipping, or GST information on my store?</summary><p>I can review how your existing payment and delivery options are presented to shoppers. Payment-gateway, shipping, or GST configuration and compliance work must be explicitly scoped and supported by your providers.</p></details>
+        <details class="faq-item"><summary>What should I share before we discuss a project?</summary><p>Share your store or listing link, the platform you use, what you sell, and the main challenge you want to address. That gives us a practical starting point for discussing scope.</p></details>
+        <details class="faq-item"><summary>How is a project scoped and priced?</summary><p>Project work is scoped around defined deliverables. Ongoing support is scoped around priorities and cadence. I’ll confirm whether the work is a fit before proposing next steps.</p></details>
+        <details class="faq-item"><summary>Do you guarantee sales, rankings, or advertising returns?</summary><p>No. Results depend on your offer, competition, budget, customer experience, and other factors. We can agree on the work and relevant measures, but I won’t promise outcomes I can’t control.</p></details>
+        <details class="faq-item"><summary>How do I get started?</summary><p>Send a short note about your business and what you want to improve. You can reach SaleStrat by email or WhatsApp, or book a conversation from the contact section below.</p></details>
       </div>
     </div>
   </section>
 
-  <section class="section section-rule theme-band-paper" id="contact">
-    <div class="container">
-      <div class="cta-band reveal">
-        <div class="cta-copy"><span class="cta-eyebrow">A direct line to the person doing the work</span><h2>Tell me what your store needs next.</h2><p class="lede">Share your store link, the problem you’re seeing, and what progress would look like. I’ll reply to discuss a practical next step.</p></div>
-        <div class="cta-actions"><a href="https://calendly.com/info-salestrat/30min" class="btn btn-primary" target="_blank" rel="noopener">Book a conversation</a><a href="mailto:info.salestrat@gmail.com" class="btn btn-outline">Email SaleStrat</a><a href="https://wa.me/917757075336" class="btn btn-outline" target="_blank" rel="noopener">WhatsApp</a></div>
-      </div>
-    </div>
-  </section>
 </main>
 
-<footer class="site-footer"><div class="container footer-row"><span>SaleStrat © 2026 — Websites, stores &amp; growth</span><div class="footer-links"><a href="services.html">Services</a><a href="system.html">Our system</a><a href="case-studies.html">Case studies</a><a href="about.html">About</a><a href="why-choose-salestrat.html">Why SaleStrat</a><a href="vision.html">Vision</a><a href="blog/index.html">Insights</a></div></div></footer>
+<footer class="site-footer site-footer-premium" id="contact">
+  <div class="container">
+    <div class="footer-cta">
+      <div class="cta-band reveal footer-cta-band">
+        <div class="cta-copy"><span class="cta-eyebrow">A direct line to the person doing the work</span><h2>Let’s make your digital presence work harder.</h2><p class="lede">Have a website to build, a store to improve, or a growth challenge to solve? Let’s talk.</p></div>
+        <div class="cta-actions"><a href="https://calendly.com/info-salestrat/30min" class="btn btn-primary" target="_blank" rel="noopener">Start a project</a><a href="mailto:info.salestrat@gmail.com" class="btn btn-outline">Email SaleStrat</a><a href="https://wa.me/917757075336" class="btn btn-outline" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="index.html#top" class="footer-logo"><img src="logo.png" alt="SaleStrat"></a>
+        <p>Independent digital growth support for websites, stores, and the work that helps them grow.</p>
+        <span>SaleStrat <i aria-hidden="true">|</i> Ecomnomics</span>
+      </div>
+      <div class="footer-column"><h2>Services</h2><a href="services/design-build.html">Design &amp; Build</a><a href="services/manage-grow.html">Manage &amp; Grow</a><a href="blog/ai-sales-chat-marketing.html">SaleStratXAI</a></div>
+      <div class="footer-column"><h2>Company</h2><a href="about.html">About SaleStrat</a><a href="case-studies.html">Selected work</a><a href="index.html#ecomnomics">Ecomnomics</a><a href="index.html#faq">FAQs</a><a href="process.html">How we work</a><a href="why-choose-salestrat.html">Why SaleStrat</a><a href="vision.html">Vision</a><a href="services.html">All services</a><a href="system.html">Our system</a><a href="blog/index.html">Insights</a></div>
+      <div class="footer-column footer-connect"><h2>Connect</h2><a href="mailto:info.salestrat@gmail.com">info.salestrat@gmail.com</a><a href="https://wa.me/917757075336" target="_blank" rel="noopener">WhatsApp</a><a href="https://calendly.com/info-salestrat/30min" target="_blank" rel="noopener">Book a conversation</a></div>
+    </div>
+    <div class="footer-bottom"><span>SaleStrat &copy; 2026 &mdash; Websites, stores &amp; growth</span><span>Clear scope. Practical work. Realistic expectations.</span><div class="footer-legal"><a href="privacy-policy.html">Privacy Policy</a><a href="terms-of-service.html">Terms of Service</a><a href="index.html#top">Back to top &uarr;</a></div></div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
 <script src="js/site.js"></script><script src="js/chatbot.js"></script>
 </body>
 </html>
